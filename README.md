@@ -3,12 +3,12 @@
 
 ## 사용한 데이터셋
 1. DACON 대회 train data, test data
-train data 5000개, test data 5000개
-(출처 : https://dacon.io/competitions/official/235864/data)
+  - train data 5000개, test data 5000개
+  (출처 : https://dacon.io/competitions/official/235864/data)
 
 2. 네이버 리뷰 데이터셋
-train data 150000개, test data 50000개 -> 5000, 10000개로 sampling하여 진행(google colab RAM 부족)
-(출처 : https://raw.githubusercontent.com/e9t/nsmc)
+  - train data 150000개, test data 50000개 -> 5000, 10000개로 sampling하여 진행(google colab RAM 부족)
+  (출처 : https://raw.githubusercontent.com/e9t/nsmc)
 
 ## 목표
 0(부정)과 1(긍정)으로 분류된 네이버 영화 리뷰 데이터를 분석하고 딥러닝 모델을 통해 학습시킨 후
@@ -31,5 +31,7 @@ keras 패키지의 라이브러리 사용
 3. 모뎋 설계
   - Logistic Regression (skit learn library)
   - Soft Vector Machine (skit learn library)
-  - DNN (tenserflow keras)
+  - DNN (tenserflow keras) : 3층 신경망 + Dropout(0.4)
+    - Countervectorizer : 단어의 빈도수만 추출
   - RNN by LSTM (tensorflow keras)
+    - Tokenizer : 단어의 빈도수와  추출
