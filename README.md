@@ -143,7 +143,8 @@ Word Counts
 
 3. DNN : Best Performance Observed
    
-   ![image](https://github.com/user-attachments/assets/ed864a96-7cc2-4e65-bf4f-ffa34c1e0709)
+   ![image](https://github.com/user-attachments/assets/90e8d70d-14ec-4c3c-b7be-58825a980d7e)
+
    > Red : Possibility of Positive Review / Blue : Possibility of Negative Review
 
     Predictions are clearly biased toward 0 or 1, showing confident classifications.
